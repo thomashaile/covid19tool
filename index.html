@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Covid19 Assesment-Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="message">
+            <h1>Welcome to the COVID-19 Self-Assessment Tool</h1>
+
+            <p> This tool will help you assess your symptoms and determine if you're a candidate for a coronavirus disease 2019 (COVID-19) test. It also offers guidance on when to seek medical care and what to do in the meantime. This information is based
+                on WHO guidelines</p>
+        </div>
+        <div id="start">Start Assesment!</div>
+        <div id="assesment" style="display: none">
+            <div id="question"></div>
+            <div id="choices">
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+            </div>
+            <div id="caution">
+                <!--for later use-->
+            </div>
+            <div id="progress"></div>
+        </div>
+        <div id="scoreContainer" style="display: none">
+
+        </div>
+    </div>
+    <script src="assesment.js"></script>
+</body>
+
+</html>
